@@ -45,6 +45,7 @@
   <p class="resultado-label">Datos de la Tarjeta Encriptados:</p>
   <code class="resultado-codigo">{{ tarjetaEncriptada }}</code>
   <!-- Explicación del algoritmo utilizado -->
+  <!-- ---- -->
   <p v-if="tipoAlgoritmo" class="algoritmo-info">
     <!-- Explicación detallada del algoritmo -->
     <template v-if="tipoAlgoritmo === 'AES'">
