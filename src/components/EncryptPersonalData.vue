@@ -249,6 +249,7 @@ export default {
 };
 
 // Llamar al método hashearData256Dos de apiService.js
+//algo
 apiService.hashearData256Dos(datos)
   .then(response => {
     // Manejar la respuesta del backend (datos hasheados)
