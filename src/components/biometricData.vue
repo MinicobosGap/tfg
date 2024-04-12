@@ -18,7 +18,7 @@
       <button @click="capturarFotoCara" class="accion-btn">Capturar Foto</button>
     </div>
     
-    <!-- Botón para encriptar el dato biométrico seleccionado -->
+    <!-- Botón para encriptar el dato biométrico seleccionado -->  <!--  -->
     <button @click="encriptarDato" class="accion-btn" :disabled="!tipoSeleccionado">Encriptar Dato Biométrico</button>
     
     <!-- Mostrar el resultado de la encriptación -->
