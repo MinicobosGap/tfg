@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:5000'; // La URL de tu servidor Flask
+const baseURL = 'https://encryptdata.netlify.app/.netlify/functions'; // La URL de tu servidor Flask
 
 const apiService = {
     encriptarData(datos) {
