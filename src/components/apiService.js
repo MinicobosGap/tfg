@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://encryptdataonline-5e03fc8050f7.herokuapp.com'; // La URL de tu servidor Flask
+const baseURL = 'https://tfg-backend-78af82b81332.herokuapp.com/'; // La URL de tu servidor Flask
 
 const apiService = {
     encriptarData(datos) {
