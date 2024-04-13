@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://encryptdata.netlify.app/.netlify/functions'; // La URL de tu servidor Flask
+const baseURL = 'https://encryptdataonline-5e03fc8050f7.herokuapp.com'; // La URL de tu servidor Flask
 
 const apiService = {
     encriptarData(datos) {
