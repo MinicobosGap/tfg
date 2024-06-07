@@ -50,44 +50,23 @@
     <!-- Explicación detallada del algoritmo -->
     <template v-if="tipoAlgoritmo === 'AES'">
       <!-- Explicación del algoritmo utilizado: Por qué se ha escogido AES-256 específicamente para encriptar datos de tarjeta de crédito -->
-      <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Por qué se ha escogido AES-256 para encriptar datos de tarjeta de crédito:</p>
+      <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Se ha escogido AES-256 para encriptar datos de tarjeta de crédito:</p>
       <p>
-        AES (Advanced Encryption Standard) es un algoritmo de cifrado simétrico ampliamente adoptado y considerado seguro. La elección de AES-256 para encriptar datos de tarjetas de crédito se fundamenta en su robustez, eficiencia y seguridad comprobada en la protección de datos sensibles. AES-256 ofrece una combinación óptima de seguridad y rendimiento, lo que lo hace adecuado para aplicaciones donde la protección de la información es fundamental. Ha sido evaluado y recomendado por organizaciones de seguridad de renombre como el NIST (Instituto Nacional de Normas y Tecnología).
-      </p>
-      <!-- Mención de empresas conocidas que utilizan AES-256 para encriptar datos -->
-      <p>
-        En la actualidad, es muy probable que numerosas entidades financieras líderes y organizaciones de renombre utilicen AES-256 para encriptar datos sensibles, incluyendo bancos, instituciones gubernamentales y empresas de tecnología. Algunos ejemplos destacados incluyen Bank of America, PayPal, Google y Microsoft, quienes seguramente emplean AES-256 para garantizar la seguridad de la información confidencial de sus clientes. Sin embargo, es importante tener en cuenta que esta información no puede ser confirmada al 100% debido a las políticas de seguridad y confidencialidad de las empresas, pero es altamente probable que utilicen este algoritmo dado su nivel de seguridad y adopción en la industria.
+        AES (Advanced Encryption Standard) es un algoritmo de cifrado simétrico ampliamente adoptado y considerado seguro. La elección de AES-256 para encriptar datos de tarjetas de crédito se detallará en la conclusión final, a la cual se recomienda acceder una vez se haya revisado todas las otras secciones.
       </p>
       <!-- Separación con punto y coma -->
       <span style="color: gray;">&bull;</span>
       <!-- Explicación comparativa con otros algoritmos -->
-      <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Comparación con otros algoritmos:</p>
-      <p>
-        Aunque existen varios algoritmos de cifrado disponibles, AES-256 destaca por su mayor seguridad y eficiencia en comparación con otros algoritmos. Algunos algoritmos más antiguos, como DES, RSA, MD5 y SHA-1, han demostrado vulnerabilidades a ataques de colisión y no cumplen con los estándares actuales de seguridad. Por otro lado, AES-256 ofrece una resistencia excepcional a los ataques criptográficos conocidos y una amplia aceptación en la industria de la seguridad, lo que lo convierte en la elección preferida para la encriptación de datos sensibles como los de tarjetas de crédito.
-      </p>
     </template>
     
     <template v-if="tipoAlgoritmo === 'SHA-256'">
       <!-- Explicación del algoritmo utilizado: Por qué se ha escogido SHA-256 específicamente para hashear datos de tarjeta de crédito -->
-      <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Por qué se ha escogido SHA-256 para hashear datos de tarjeta de crédito:</p>
+      <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Se ha escogido SHA-256 para hashear datos de tarjeta de crédito:</p>
       <p>
-        SHA-256 es una función hash criptográfica ampliamente utilizada que produce una salida de 256 bits. La elección de SHA-256 para hashear datos de tarjetas de crédito se basa en su robustez y resistencia a colisiones. SHA-256 ofrece una forma rápida y confiable de generar un hash único para los datos de la tarjeta, lo que los hace difíciles de invertir o reconstruir. Además, SHA-256 es ampliamente adoptado por instituciones financieras y organizaciones gubernamentales para garantizar la seguridad de la información confidencial.
-      </p>
-      <!-- Mención de empresas conocidas que utilizan SHA-256 para hashear datos de tarjeta de crédito -->
-      <p>
-        En la industria financiera, es muy probable que varias instituciones líderes, como Visa, Mastercard y American Express, utilicen SHA-256 para hashear datos de tarjetas de crédito y proteger la información de sus clientes. Este algoritmo también es utilizado por empresas de tecnología como PayPal y Amazon, quienes seguramente confían en SHA-256 para mantener seguros los datos de transacciones financieras. Sin embargo, es importante tener en cuenta que esta información no puede ser confirmada al 100% debido a las políticas de seguridad y confidencialidad de las empresas, pero es altamente probable que utilicen este algoritmo dado su nivel de seguridad y adopción en la industria.
+        SHA-256 es una función hash criptográfica ampliamente utilizada que produce una salida de 256 bits. La elección de SHA-256 para hashear datos de tarjetas de crédito se detallará en la conclusión final, a la cual se recomienda acceder una vez se haya revisado todas las otras secciones.
       </p>
       <!-- Separación con punto y coma -->
-      <span style="color: gray;">&bull;</span>
-      <!-- Explicación comparativa con otros algoritmos -->
-      <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Comparación con otros algoritmos de hash:</p>
-      <p>
-        A pesar de la disponibilidad de varios algoritmos de hash, SHA-256 destaca por su mayor seguridad y confiabilidad. Algunos algoritmos más antiguos, como MD5 y SHA-1, han demostrado vulnerabilidades a ataques de colisión y ya no son considerados seguros para aplicaciones críticas de seguridad. En contraste, SHA-256 ofrece una resistencia excepcional a los ataques criptográficos conocidos y es ampliamente aceptado como estándar de seguridad en la industria. Por lo tanto, la elección de SHA-256 para hashear datos de tarjetas de crédito se basa en su seguridad comprobada y su uso generalizado en aplicaciones de seguridad sensibles.
-      </p>
-    <!-- Comparación con otros algoritmos -->
-    <p>
-    Sin embargo, aunque existen otros algoritmos de encriptación y hash, como DES, RSA, MD5, SHA-1, entre otros, AES y SHA-256 son preferibles para el cifrado y hashing de datos de tarjetas de crédito debido a su robustez, resistencia a ataques conocidos y amplia aceptación en la industria de la seguridad. Algunos algoritmos más antiguos como MD5 y SHA-1 han demostrado vulnerabilidades a ataques de colisión, mientras que RSA puede ser menos eficiente y más costoso computacionalmente. Por lo tanto, la elección de AES y SHA-256 se basa en su seguridad, rendimiento y fiabilidad en la protección de datos sensibles como los números de tarjeta de crédito.
-    </p>
+      <span style="color: gray;">&bull;</span>  
   </template>
   </p>
 </div>

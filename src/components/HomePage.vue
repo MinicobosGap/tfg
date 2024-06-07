@@ -2,7 +2,7 @@
   <div class="home-container">
     <header>
       <h1>Bienvenidos a mi página web de encriptación</h1>
-      <p>Hora de poner a salvo nuestros datos!</p>
+      <p>¡Hora de poner a salvo nuestros datos!</p>
     </header>
     <section class="introduction-section">
       <p>
@@ -18,13 +18,13 @@
         Hashear un dato en cambio, es equivalente a convertir el dato en texto plano a un dato cifrado irreversible, es decir, no se puede volver a convertir al dato original. Esto es importante para datos extremadamente sensibles que no se necesita tener en texto plano, como una contraseña en un sitio web a la hora de iniciar sesión en este.
       </p>
       <p>
-        Una vez clara esta diferencia, comencemos a encriptar datos!
+        Una vez clara esta diferencia, ¡comencemos a encriptar datos!
       </p>
     </section>
     <section class="about-section">
-      <h2>Acerca de Nosotros</h2>
+      <h2>Acerca de mí</h2>
       <p>
-        Este es un equipo que tiene como objetivo fines demostrativos para enseñar que tipo de algoritmo se ha de usar para proteger ciertos tipos de datos, y por que.
+        Esta página web tiene como objetivo fines demostrativos para enseñar qué tipo de algoritmo se ha de usar para proteger datos sensibles, y por qué.
       </p>
     </section>
     <footer>

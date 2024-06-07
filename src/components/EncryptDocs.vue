@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import CryptoJS from 'crypto-js';
+import apiService from './apiService';
 
 export default {
   data() {
@@ -47,18 +47,30 @@ export default {
         reader.readAsText(file);
       }
     },
-    encryptFile() {
-      if (this.fileContent) {
-        // Encriptar el contenido del archivo usando AES
-        const encryptedData = CryptoJS.AES.encrypt(this.fileContent, 'secretKey').toString();
-        // Crear un Blob con el contenido encriptado
-        const blob = new Blob([encryptedData], { type: 'text/plain' });
-        // Crear un enlace de descarga
-        this.downloadUrl = window.URL.createObjectURL(blob);
-        // Mostrar la explicación detallada
-        this.explanationVisible = true;
-      }
-    },
+    async encryptFile() {
+  if (this.fileContent) {
+    try {
+      // Preparar los datos para enviar al servidor
+      const datos = {
+        fileContent: this.fileContent
+      };
+      // Llamar al método del backend para encriptar el contenido del archivo
+      const response = await apiService.encriptarDataDocs(datos);
+      console.log(response.data); // Verifica la estructura de la respuesta
+      const encryptedData = response.data; // Asigna directamente la respuesta del servidor
+      // Crear un Blob con el contenido encriptado
+      const blob = new Blob([encryptedData], { type: 'text/plain' });
+      // Crear un enlace de descarga
+      this.downloadUrl = window.URL.createObjectURL(blob);
+      // Mostrar la explicación detallada
+      this.explanationVisible = true;
+    } catch (error) {
+      console.error('Error al encriptar los datos', error);
+      this.explanationVisible = false;
+    }
+  }
+}
+,
   },
 };
 </script>

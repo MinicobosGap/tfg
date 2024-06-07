@@ -47,48 +47,17 @@
 
     <div v-if="mostrarExplicacionEncriptar" class="explicacion-container">
     <!-- Razones para la Elección de AES256 para Encriptar Datos Personales -->
-    <h2>Razones para la Elección de AES256 en la Encriptación de Datos Personales</h2>
-
-    <!-- Punto 1: Seguridad y Protección de Datos Personales -->
-    <p>1. <strong>Seguridad y Protección de Datos Personales:</strong> Los datos personales, como nombre, apellido, teléfono, dirección de vivienda, correo electrónico y código postal, requieren una protección sólida. AES256, al ser un algoritmo de encriptación simétrica, proporciona una capa robusta de seguridad con una clave de encriptación de 256 bits, lo que garantiza la confidencialidad de la información personal.</p>
-
-    <!-- Punto 2: Eficacia y Robustez -->
-    <p>2. <strong>Eficacia y Robustez:</strong> AES256 es ampliamente reconocido por su eficacia y robustez en la protección de datos sensibles. Al ser uno de los estándares de encriptación más utilizados y confiables, ha demostrado ser altamente resistente a los ataques criptográficos, asegurando la integridad y la confidencialidad de los datos personales.</p>
-
-    <!-- Punto 3: Cumplimiento con Normativas de Protección de Datos -->
-    <p>3. <strong>Cumplimiento con Normativas de Protección de Datos:</strong> La elección de AES256 garantiza el cumplimiento con normativas y regulaciones de protección de datos, proporcionando una capa adicional de seguridad necesaria para datos personales. Su amplia adopción en entornos donde la seguridad de la información personal es primordial refuerza su idoneidad para cumplir con los estándares de privacidad y seguridad requeridos.</p>
-
-    <!-- Punto 4: Eficiencia y Flexibilidad -->
-    <p>4. <strong>Eficiencia y Flexibilidad:</strong> AES256 ofrece un equilibrio adecuado entre seguridad, eficiencia y flexibilidad. Su implementación eficiente permite encriptar y desencriptar grandes volúmenes de datos sin comprometer el rendimiento, lo que lo convierte en una opción eficaz para proteger datos personales en una variedad de aplicaciones y entornos.</p>
-
-    <!-- Punto 5: Amplia Adopción y Soporte -->
-    <p>5. <strong>Amplia Adopción y Soporte:</strong> AES256 es ampliamente adoptado y cuenta con un sólido soporte en la industria de la seguridad informática. Su uso extendido en aplicaciones y sistemas garantiza la interoperabilidad y la compatibilidad, lo que facilita su implementación y gestión en diferentes entornos.</p>
-
-    <!-- Comparación con Otros Algoritmos en Encriptación de Datos Personales -->
-    <h3>Comparación con Otros Algoritmos en la Encriptación de Datos Personales</h3>
-    <p>En la evaluación comparativa con otros algoritmos de encriptación, se consideró especialmente la necesidad de proteger datos personales. AES256 se destaca como la opción preferida frente a otros algoritmos, como DES o 3DES, gracias a su mayor longitud de clave y su resistencia a los ataques criptográficos, lo que garantiza un nivel superior de seguridad para los datos personales en cuestión.</p>
+    <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Se ha escogido AES-256 para encriptar datos personales:</p>
+    <p>
+      AES (Advanced Encryption Standard) es un algoritmo de cifrado simétrico ampliamente adoptado y considerado seguro. La elección de AES-256 para encriptar datos de tarjetas de crédito se detallará en la conclusión final, a la cual se recomienda acceder una vez se haya revisado todas las otras secciones.  </p>
   </div>
 
 <!-- Añadir sección de explicación para hashear -->
 <div v-if="mostrarExplicacionHashear" class="explicacion-container">
-  <!-- Razones para la Elección de SHA-256 para Datos Personales -->
-  <h2>Razones para la Elección de SHA-256 en el Hasheo de Datos Personales</h2>
-
-  <!-- Punto 1: Resistencia y Amplio Soporte -->
-  <p>1. <strong>Resistencia y Amplio Soporte:</strong> SHA-256 es un algoritmo de hash ampliamente reconocido y respaldado en la industria de la seguridad informática. Su robustez y amplia adopción lo convierten en una opción confiable para proteger datos personales en una página web.</p>
-
-  <!-- Punto 2: Comparación con Bcrypt y SHA-3 -->
-  <h3>Comparación con Bcrypt y SHA-3</h3>
-  <p>Al comparar SHA-256 con otros algoritmos de hash como bcrypt y SHA-3, se destacan las siguientes razones para elegir SHA-256 en una página web donde se manejan datos personales:</p>
-
-  <!-- Punto 3: Eficiencia y Flexibilidad -->
-  <p>• <strong>Eficiencia y Flexibilidad:</strong> Aunque bcrypt es ampliamente utilizado para el almacenamiento seguro de contraseñas, su diseño orientado a la seguridad adaptativa puede introducir una carga computacional adicional en aplicaciones web con un alto volumen de usuarios. En cambio, SHA-256 ofrece una combinación óptima de eficiencia y seguridad, lo que lo hace más adecuado para el hasheo rápido y eficiente de datos personales sin comprometer la seguridad.</p>
-
-  <!-- Punto 4: Seguridad y Robustez -->
-  <p>• <strong>Seguridad y Robustez:</strong> Aunque SHA-3 es un algoritmo de hash reciente que ofrece ciertas mejoras en seguridad y resistencia criptográfica, SHA-256 sigue siendo la opción preferida para el hasheo de datos personales en aplicaciones web establecidas. Esto se debe a su amplia adopción y al tiempo que ha sido sometido a pruebas y análisis exhaustivos, lo que ha demostrado su seguridad y robustez en una amplia variedad de casos de uso.</p>
-
-  <!-- Punto 5: Estándar de la Industria -->
-  <p>• <strong>Estándar de la Industria:</strong> SHA-256 es un estándar de la industria reconocido y ampliamente utilizado para el hasheo de datos sensibles, incluidos los datos personales. Su estatus como estándar establecido proporciona una medida adicional de confianza y seguridad en el contexto de la protección de la privacidad y la integridad de los datos.</p>
+  <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Se ha escogido SHA-256 para hashear datos personales:</p>
+  <p>
+  SHA-256 es una función hash criptográfica ampliamente utilizada que produce una salida de 256 bits. La elección de SHA-256 para hashear datos personales se detallará en la conclusión final, a la cual se recomienda acceder una vez se haya revisado todas las otras secciones.
+  </p>
 </div>
 </div>
 

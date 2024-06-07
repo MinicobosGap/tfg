@@ -12,25 +12,22 @@
 
    <!-- Sección de explicación para hashear contraseñas -->
    <div v-if="contrasenaEncriptada" class="explicacion-container">
-      <h2>Elección de Bcrypt para el Hasheo de Contraseñas</h2>
-
-      <!-- Punto 1: Seguridad Adaptativa -->
-      <p><strong>1. Seguridad Adaptativa:</strong> Bcrypt se caracteriza por su capacidad para adaptarse al tiempo, lo que significa que su costo computacional puede incrementarse con el avance de la tecnología. Esta adaptabilidad asegura que, incluso con el aumento de la capacidad de cómputo, el proceso de hasheo de contraseñas siga siendo resistente y seguro.</p>
-
-      <!-- Punto 2: Resistencia Frente a Ataques de Fuerza Bruta -->
-      <p><strong>2. Resistencia Frente a Ataques de Fuerza Bruta:</strong> Bcrypt incorpora un factor de costo ajustable, lo que dificulta significativamente los intentos de descifrado mediante ataques de fuerza bruta. Esta característica es crucial para proteger contraseñas, ya que dificulta la posibilidad de descubrir la contraseña original a partir del hash almacenado.</p>
-
-      <!-- Punto 3: Protección Contra Ataques de Tablas de Arco Iris -->
-      <p><strong>3. Protección Contra Ataques de Tablas de Arco Iris:</strong> Bcrypt utiliza el concepto de "sal" de manera predeterminada, lo que agrega una capa adicional de seguridad al proteger contra ataques de tablas de arco iris. Estos ataques son comunes en intentos de descifrar contraseñas mediante el uso de tablas precalculadas de hashes.</p>
-
-      <!-- Punto 4: Ampliamente Utilizado en Aplicaciones de Autenticación -->
-      <p><strong>4. Ampliamente Utilizado en Aplicaciones de Autenticación:</strong> Bcrypt es una elección común en el mundo de la seguridad informática y es ampliamente utilizado en sistemas de autenticación. Su reputación se basa en su capacidad para proteger de manera efectiva las contraseñas, uno de los datos más sensibles en cualquier sistema.</p>
-
-      <!-- Punto 5: Enfoque Específico para Contraseñas Sensibles -->
-      <p><strong>5. Enfoque Específico para Contraseñas Sensibles:</strong> Bcrypt se elige específicamente para proteger contraseñas debido a su capacidad para adaptarse a las crecientes demandas de seguridad y brindar una protección robusta contra posibles amenazas. Dado que las contraseñas son un dato altamente sensible, se requiere un enfoque especializado y Bcrypt ofrece exactamente eso.</p>
-
-      <!-- Punto 6: Cumplimiento con Normativas de Protección de Datos -->
-      <p><strong>6. Cumplimiento con Normativas de Protección de Datos:</strong> La elección de Bcrypt asegura el cumplimiento con normativas y regulaciones de protección de datos, proporcionando una capa adicional de seguridad necesaria para contraseñas. En entornos regulados, como aquellos que manejan datos personales, el uso de algoritmos de hasheo robustos como Bcrypt es fundamental para garantizar la seguridad de la información.</p>
+    <ul>
+      <li><strong>Seguridad:</strong> SHA-256 es extremadamente seguro. Genera un hash único para cada entrada única, lo que lo hace resistente a los ataques de colisión.</li>
+      <br>
+      <li><strong>Rendimiento:</strong> Rendimiento: Aunque un hash SHA-256 es un 20-30% más lento de calcular que los hashes MD5 o SHA-1, ofrece un equilibrio perfecto entre seguridad y eficiencia.</li>
+      <br>
+      <li><strong>Estándar global de hash:</strong> SHA-256 se ha convertido en el estándar global de hash y se usa para mantener segura una cantidad significativa de nuestras comunicaciones.</li>
+      <br>
+      <li><strong>Uso amplio:</strong> Se utiliza en aplicaciones de mensajería como WhatsApp y Signal, programas como VeraCrypt y WinZip, en una gama de hardware y una variedad de otras tecnologías que usamos todo el tiempo.</li>
+      <br>
+      <li><strong>Flexibilidad de tamaño de hash:</strong> SHA-256 siempre devuelve un valor de hash de 256 bits, o 64 dígitos hexadecimales, sin importar qué tan largo sea el contenido mediante el cual se genera el hash.</li>
+      <br>
+      <li><strong>Resistencia a ataques:</strong> SHA-256 es resistente a todos los ataques conocidos si se usa correctamente.</li>
+      <br>
+      <li><strong>Aprobado por el gobierno de los EE.UU:</strong> SHA-256 es tan seguro que es el algoritmo de hash elegido por el gobierno de los Estados Unidos para proteger la información clasificada.</li>
+      <br>
+    </ul>
     </div>
   </div>
 </template>
