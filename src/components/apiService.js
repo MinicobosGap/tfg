@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-//   -> IP BUENA https://tfg-backend-78af82b81332.herokuapp.com/
-const baseURL = 'http://localhost:5000/'; // La URL de tu servidor Flask
+//   -> IP MALA http://localhost:5000/
+const baseURL = 'https://tfg-backend-78af82b81332.herokuapp.com/'; // La URL de tu servidor Flask
 
 const apiService = {
     encriptarData(datos) {
