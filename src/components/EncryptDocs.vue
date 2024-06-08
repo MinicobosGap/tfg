@@ -8,25 +8,16 @@
 
     <!-- Explicación detallada -->
     <div v-if="explanationVisible" class="explanation-container">
-      <h2>Elección del algoritmo AES para la encriptación de documentos sensibles</h2>
+      <p class="subtitulo" style="font-size: 18px; font-weight: bold;">Se ha escogido AES-256 para encriptar documentos:</p>
       <p>
-        Al encriptar documentos sensibles de cualquier extensión, la elección del algoritmo de encriptación es crítica para garantizar la seguridad y la privacidad de los datos. Hemos seleccionado AES (Advanced Encryption Standard) como el algoritmo preferido por las siguientes razones:
-      </p>
-      <ol>
-        <li><strong>Versatilidad:</strong> AES puede encriptar eficazmente documentos de cualquier extensión, lo que nos permite proteger una amplia variedad de tipos de archivos sensibles.</li>
-        <li><strong>Seguridad comprobada:</strong> AES ha sido ampliamente evaluado y utilizado en la industria de la seguridad informática, demostrando ser altamente seguro y resistente a los ataques.</li>
-        <li><strong>Confidencialidad y privacidad:</strong> Al encriptar documentos sensibles, es crucial mantener la confidencialidad y la privacidad de los datos. AES proporciona un alto nivel de protección para garantizar que solo las personas autorizadas puedan acceder al contenido encriptado.</li>
-        <li><strong>Compatibilidad y facilidad de uso:</strong> AES es compatible con una amplia gama de plataformas y sistemas, lo que facilita su integración en diferentes entornos. Además, su implementación es relativamente sencilla y ofrece un buen rendimiento en términos de velocidad y eficiencia.</li>
-      </ol>
-      <p>
-        En resumen, la elección del algoritmo AES nos brinda la tranquilidad de que nuestros documentos sensibles estarán protegidos de manera confiable, independientemente de su extensión, garantizando la seguridad y la privacidad de los datos.
+        AES (Advanced Encryption Standard) es un algoritmo de cifrado simétrico ampliamente adoptado y considerado seguro. La elección de AES-256 para encriptar documentos se detallará en la conclusión final, a la cual se recomienda acceder una vez se haya revisado todas las otras secciones.
       </p>
     </div>
   </div>
 </template>
 
 <script>
-import apiService from './apiService';
+import CryptoJS from 'crypto-js';
 
 export default {
   data() {
@@ -47,30 +38,19 @@ export default {
         reader.readAsText(file);
       }
     },
-    async encryptFile() {
-  if (this.fileContent) {
-    try {
-      // Preparar los datos para enviar al servidor
-      const datos = {
-        fileContent: this.fileContent
-      };
-      // Llamar al método del backend para encriptar el contenido del archivo
-      const response = await apiService.encriptarDataDocs(datos);
-      console.log(response.data); // Verifica la estructura de la respuesta
-      const encryptedData = response.data; // Asigna directamente la respuesta del servidor
-      // Crear un Blob con el contenido encriptado
-      const blob = new Blob([encryptedData], { type: 'text/plain' });
-      // Crear un enlace de descarga
-      this.downloadUrl = window.URL.createObjectURL(blob);
-      // Mostrar la explicación detallada
-      this.explanationVisible = true;
-    } catch (error) {
-      console.error('Error al encriptar los datos', error);
-      this.explanationVisible = false;
-    }
-  }
-}
-,
+
+    encryptFile() {
+      if (this.fileContent) {
+        // Encriptar el contenido del archivo usando AES
+        const encryptedData = CryptoJS.AES.encrypt(this.fileContent, 'secretKey').toString();
+        // Crear un Blob con el contenido encriptado
+        const blob = new Blob([encryptedData], { type: 'text/plain' });
+        // Crear un enlace de descarga
+        this.downloadUrl = window.URL.createObjectURL(blob);
+        // Mostrar la explicación detallada
+        this.explanationVisible = true;
+      }
+    },
   },
 };
 </script>

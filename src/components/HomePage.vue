@@ -1,15 +1,15 @@
 <template>
   <div class="home-container">
     <header>
-      <h1>Bienvenidos a mi página web de encriptación</h1>
+      <h1>Bienvenidos a encryptdata</h1>
       <p>¡Hora de poner a salvo nuestros datos!</p>
     </header>
     <section class="introduction-section">
       <p>
-        Esta aplicación tiene como objetivo fines demostrativos respecto a como proteger diferentes tipos de datos.
+        Esta aplicación tiene como objetivo fines demostrativos y la demostración de cómo queda un dato protegido.
       </p>
       <p>
-        Es importante mencionar o recordar la gran diferencia entre encriptar y hashear un dato. 
+        Antes de comenzar, es importante explicar la gran diferencia entre encriptar y hashear un dato. 
       </p>
       <p>
         Encriptar un dato es equivalente a convertir un dato en texto plano a un dato cifrado reversible, es decir, se puede volver a convertir de ese dato cifrado al dato en texto plano inicial. Esto sirve para situaciones en el que el tipo de dato se necesita recuperar en algún momento.
@@ -24,7 +24,7 @@
     <section class="about-section">
       <h2>Acerca de mí</h2>
       <p>
-        Esta página web tiene como objetivo fines demostrativos para enseñar qué tipo de algoritmo se ha de usar para proteger datos sensibles, y por qué.
+        Soy un estudiante que está actualmente cursando el último año de la carrera de ingeniería informática en la Universitat de Barcelona y estoy haciendo el trabajo de final de grado (TFG) que en mi caso trata sobre criptografía. 
       </p>
     </section>
     <footer>

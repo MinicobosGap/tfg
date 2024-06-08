@@ -322,31 +322,32 @@ this.mostrarExplicacionHashear = true;
 
 <style scoped>
 .encriptar-datos-container {
-  max-width: 400px;
+  max-width: 800px; /* Aumenta el ancho máximo del contenedor */
   margin: 100px auto;
-  padding: 20px;
+  padding: 40px; /* Aumenta el padding del contenedor */
   border: 1px solid #ccc;
   border-radius: 8px;
+  font-size: 18px; /* Aumenta el tamaño de la fuente */
 }
 
 .datos-input {
   width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-  font-size: 16px;
+  margin-bottom: 20px; /* Aumenta el margen inferior */
+  padding: 16px; /* Aumenta el padding del input */
+  font-size: 20px; /* Aumenta el tamaño de la fuente del input */
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
 .encriptar-btn {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
-  padding: 10px 15px;
+  padding: 20px 30px; /* Aumenta el padding del botón */
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
-  margin-right: 10px;
+  font-size: 20px; /* Aumenta el tamaño de la fuente del botón */
+  margin-right: 20px; /* Aumenta el margen derecho del botón */
 }
 
 .encriptar-btn:hover {
@@ -354,28 +355,31 @@ this.mostrarExplicacionHashear = true;
 }
 
 .resultado-container {
-  margin-top: 20px;
+  margin-top: 40px; /* Aumenta el margen superior */
 }
 
 .resultado-label {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 20px; /* Aumenta el tamaño de la fuente */
+  margin-bottom: 10px; /* Aumenta el margen inferior */
 }
 
 .resultado-codigo {
   display: block;
-  padding: 10px;
+  padding: 20px; /* Aumenta el padding del código */
   background-color: #f8f8f8;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-family: monospace;
+  overflow-x: auto; /* Añade un desplazamiento horizontal si es necesario */
+  white-space: nowrap; /* Evita que el texto se ajuste automáticamente a la siguiente línea */
 }
 
 .error-container {
-  margin-top: 10px;
+  margin-top: 20px; /* Aumenta el margen superior */
 }
 
 .mensaje-error {
   color: red;
+  font-size: 18px; /* Aumenta el tamaño de la fuente */
 }
 </style>
